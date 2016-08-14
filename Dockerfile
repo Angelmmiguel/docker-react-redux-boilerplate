@@ -11,11 +11,11 @@
 ##   Connect to the container at DOCKER_IP:3000
 ##     replacing DOCKER_IP for the IP of your active docker host
 
-FROM gcr.io/stacksmith-images/ubuntu-buildpack:14.04-r8
+FROM gcr.io/stacksmith-images/debian-buildpack:wheezy-r8
 
 MAINTAINER Bitnami <containers@bitnami.com>
 
-ENV STACKSMITH_STACK_ID="4slmknr" \
+ENV STACKSMITH_STACK_ID="3f2hk0y" \
     STACKSMITH_STACK_NAME="Angelmmiguel/docker-react-redux-boilerplate" \
     STACKSMITH_STACK_PRIVATE="1"
 
@@ -26,11 +26,10 @@ ENV PATH=/opt/bitnami/node/bin:/opt/bitnami/python/bin:$PATH \
 
 ## STACKSMITH-END: Modifications below this line will be unchanged when regenerating
 
-# ExpressJS template
+# Node base template
 COPY . /app
 WORKDIR /app
 
 RUN npm install
 
-EXPOSE 3000
-CMD ["npm", "start"]
+CMD ["node"]
