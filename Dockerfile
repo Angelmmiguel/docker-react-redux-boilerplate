@@ -26,10 +26,13 @@ ENV PATH=/opt/bitnami/node/bin:/opt/bitnami/python/bin:$PATH \
 
 ## STACKSMITH-END: Modifications below this line will be unchanged when regenerating
 
+# Entrypoint
+COPY ./scripts/entrypoint.sh /
+
 # Node base template
-COPY . /app
 WORKDIR /app
 
-RUN npm install
+# Set the entrypoint
+ENTRYPOINT ["/entrypoint.sh"]
 
 CMD ["node"]

@@ -1,0 +1,21 @@
+version: '2'
+
+services:
+  dev:
+    build: .
+    command: npm run dev
+    ports:
+      - 8080:8080
+    volumes:
+      - .:/app
+    environment:
+      NODE_ENV: development
+  production:
+    build: .
+    command: npm start
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/app
+    environment:
+      NODE_ENV: production
