@@ -10,7 +10,8 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.13.4",
-    "webpack": "^1.13.0"
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2"
   },
   "devDependencies": {
     "babel": "^6.5.0",
@@ -31,6 +32,7 @@
     "sass-loader": "^3.2.0",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-dev-server": "^1.14.1",
+    "webpack": "^1.13.0"
   }
 }
