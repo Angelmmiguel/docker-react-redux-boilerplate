@@ -6,3 +6,6 @@ npm-debug*
 /dist/*.css
 /dist/static/
 /dist/index.html
+
+# Remove this line if you want to update the yarn.lock
+yarn.lock
