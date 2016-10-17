@@ -10,11 +10,14 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.13.4",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-router": "^2.8.1",
     "react-redux": "^4.4.5",
     "redux": "^3.5.2"
   },
   "devDependencies": {
-    "babel": "^6.5.0",
+    "babel": "^6.5.2",
     "babel-core": "^6.7.7",
     "babel-loader": "^6.2.4",
     "babel-polyfill": "^6.7.4",
@@ -24,11 +27,8 @@
     "file-loader": "^0.8.5",
     "html-webpack-plugin": "^2.16.1",
     "extract-text-webpack-plugin": "^1.0.1",
-    "react": "^0.14.8",
-    "react-dom": "^0.14.8",
     "react-rangeslider": "^1.0.2",
     "node-sass": "^3.6.0",
-    "react-router": "^2.4.0",
     "sass-loader": "^3.2.0",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",

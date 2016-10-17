@@ -34,6 +34,9 @@ RUN useradd yoshi -m && \
 # Set the user
 USER yoshi
 
+# Install yarn!
+RUN sudo npm install yarn -g
+
 # Entrypoint
 COPY ./scripts/entrypoint.sh /
 

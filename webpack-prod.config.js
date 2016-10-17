@@ -34,12 +34,6 @@ module.exports = {
   resolve: {
     extensions: ['', '.js', '.jsx']
   },
-  externals: {
-    // Use external version of
-    "react": "React",
-    "react-dom": "ReactDOM",
-    "react-router": "ReactRouter"
-  },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.bundle.js'),
     new webpack.DefinePlugin({
